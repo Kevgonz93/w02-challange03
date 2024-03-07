@@ -19,10 +19,3 @@ export function arrpush(arr1, arr2) {
 
   return newArr;
 }
-
-const awes = [1, 2, 3, 4];
-const ome = [5, 6, 7, 8];
-
-console.log(arrpush(awes, ome));
-console.log(awes.length);
-console.log(arrayLength(awes));
