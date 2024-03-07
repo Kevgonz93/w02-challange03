@@ -1,4 +1,4 @@
-import { arrayLength } from './index.js';
+import { arrayLength, arrPush } from './index.js';
 
 describe('length', () => {
   test('it should be 0 when argument is []', () => {
@@ -9,13 +9,12 @@ describe('length', () => {
   });
 });
 
-/*
-
-TEST 02
-describe('push', () =>{
-test('it should be [1,2,3,4] when argument is [1,2][3,4]', () => {
-  const x =[1,2][3,4]
-  const expected =
-}); 
-
-*/
+describe.only('push', () => {
+  test('it should be [1,2,3,4] when argument is [a][b]', () => {
+    const a = [1, 2];
+    const b = [3, 4];
+    const expected = [1, 2, 3, 4];
+    const r = arrPush(a, b);
+    expect(r).toBe(expected);
+  });
+});

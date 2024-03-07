@@ -7,7 +7,7 @@ export function arrayLength(p) {
   return r;
 }
 
-export function arrpush(arr1, arr2) {
+export function arrPush([arr1], [arr2]) {
   const newArr = [];
   for (let i = 0; i < arrayLength(arr1); i++) {
     arr1[i] = newArr[i];
